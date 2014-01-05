@@ -80,7 +80,7 @@ nav ul.nav.nav-tabs li {
 }
 
 nav ul.nav.nav-tabs li a.active {
-  color: #fff;
+  color: #000;
   font-weight: bold;
   font-family: OpenSansSemibold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -194,7 +194,6 @@ footer a, footer a:hover {
   font-size: 14px;
 }
 
-
 /* --responsive-test-- */
 
 .header {
@@ -202,6 +201,7 @@ footer a, footer a:hover {
     height: 100%;
     width: 100%;
     position: relative;
+    background: url(../img/bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -210,7 +210,7 @@ footer a, footer a:hover {
 
 .dailybread {
     background: none repeat scroll 0 0 #ffffff;
-    padding: 90px 0;
+    padding: 70px 0;
     color: #4d4d4d;
     width: 100%;
     border-bottom:1px solid #D1D1D1 !important;
@@ -345,6 +345,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', en
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+}
+
+.navbar {
+    margin-bottom: 0px;
 }
 
 #nav {
