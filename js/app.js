@@ -7,11 +7,37 @@ angular.module('app').config([
     function($locationProvider, $interpolateProvider, $routeProvider) {
         //$locationProvider.html5Mode(false);
         //$locationProvider.hashPrefix('!');
-        //$interpolateProvider.startSymbol('{[{');
-        //$interpolateProvider.endSymbol('}]}');
+        $interpolateProvider.startSymbol('{[{');
+        $interpolateProvider.endSymbol('}]}');
         //$routeProvider
         //.when('/', {templateUrl:'dailybread.html'})
         //.otherwise({redirectTo:'/'})
+    }
+])
+.run([
+    '$rootScope',
+    '$route',
+    function($rootScope, $route) {
+        $rootScope.$on('$routeChangeSuccess', function() {
+            $rootScope.title=$route.current.$$route.title;
+        });
+    }
+]);
+
+angular.module('app').controller('MainCtrl', [
+    '$scope',
+    '$location',
+    '$route',
+    '$document',
+    function($scope, $location, $route, $document) {
+        $scope.$on('$routeChangeSuccess', function() {
+            angular.forEach(angular.element($document[0].querySelectorAll('ul.nav-tabs')).find('a'), function(a) {
+                angular.element(a).removeClass('active');
+                if (angular.element(a).attr('href').replace('#!', '')==$location.path()) {
+                    angular.element(a).addClass('active');
+                }
+            });
+        });
     }
 ]);
 

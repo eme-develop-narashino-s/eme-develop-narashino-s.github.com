@@ -12,7 +12,8 @@
     <meta name="description" content="あなたの税金がどこで使われているかをお示しします">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <!--<title>{{ page.title }} - {{ site.title }}</title>-->
+    <title ng-bind="$root.title+' - 税金はどこへ行った？'"></title>
     <!--<link rel="stylesheet" href="css/bootstrap.css">-->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/themes/ui-lightness/jquery-ui.css">
@@ -28,16 +29,17 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 
-<body>
+<body ng-controller="MainCtrl">
     <img class="vegas-background" src="./img/bg.jpg" style="position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; bottom: auto; right: auto;">
-    <div class="vegas-overlay" style="margin: 0px; padding: 0px; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; background-image: url(./img/overlay.png);"></div>
+    <!--<div class="vegas-overlay" style="margin: 0px; padding: 0px; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; background-image: url(./img/overlay.png);"></div>-->
 
     <div id="top" class="header">
         <div class="vert-text">
             <!--[if lt IE 9]><p class=chromeframe>お使いのウェブヴラウザは古いため，当サイトのコンテンツを正常に表示できません．<br><a href="http://browsehappy.com/">最新のウェブブラウザ</a>で閲覧する事をお勧めします．</p><![endif]-->
             <div id="logo">
-                <img src="img/logo.png" alt="{{ site.title }}">
+                <!--<img src="img/logo.png" alt="{{ site.title }}">-->
                 <!--<div id="claim">あなたが習志野市に納めた税金がどこで使われているかをお示しします</div>-->
+                <img src="img/title.png" style="width:50%; height:auto" alt="{{ site.title }}">
                 <h3>あなたが習志野市に納めた税金が</h3>
                 <h3>どこで使われているかをお示しします</h3>
                 <a href="#dailybread" class="btn btn-top">次へ</a>
