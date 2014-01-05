@@ -435,3 +435,4 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', en
   color: #333333;
 }
 
+@media (max-width: 768px) { .navbar-brand {margin-left:20px;} .navbar-toggle {margin-right:25px;} #Grid .mix{margin-left:-25px;}}
