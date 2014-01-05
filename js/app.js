@@ -38,6 +38,19 @@ angular.module('app').controller('MainCtrl', [
                 }
             });
         });
+        //function(){
+            //var menu=$('nav.header_menu_wrap');
+            //var menu_top=menu.offset().top;
+            //$(window).scroll(function () {
+                //if ($(window).scrollTop() >= menu_top) {
+                    //$('body').css({'margin-top':'40px'});
+                    //menu.addClass('position_fix');
+                //}else{
+                    //$('body').css({'margin-top':'0'});
+                    //menu.removeClass('position_fix');
+                //};
+            //});
+        //}
     }
 ]);
 

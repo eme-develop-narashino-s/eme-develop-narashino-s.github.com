@@ -12,7 +12,6 @@ body {
   width: 100%;
 }
 
-
 body, p, blockquote p {
   /*
   font-family: Palatino, georgia, 'times new roman', serif;
@@ -81,7 +80,7 @@ nav ul.nav.nav-tabs li {
 }
 
 nav ul.nav.nav-tabs li a.active {
-  color: #000;
+  color: #fff;
   font-weight: bold;
   font-family: OpenSansSemibold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -211,7 +210,7 @@ footer a, footer a:hover {
 
 .dailybread {
     background: none repeat scroll 0 0 #ffffff;
-    padding: 70px 0;
+    padding: 90px 0;
     color: #4d4d4d;
     width: 100%;
     border-bottom:1px solid #D1D1D1 !important;
@@ -222,18 +221,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', en
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 
-.bubble-tree {
-    background: none repeat scroll 0 0 #ffffff;
-    padding: 70px 0;
-    color: #4d4d4d;
-    width: 100%;
-    border-bottom:1px solid #D1D1D1 !important;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
-    *zoom: 1;
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-       -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-}
+/*.bubble-tree {*/
+    /*background: none repeat scroll 0 0 #ffffff;*/
+    /*padding: 50px 0;*/
+    /*color: #4d4d4d;*/
+    /*width: 100%;*/
+    /*border-bottom:1px solid #D1D1D1 !important;*/
+/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);*/
+    /**zoom: 1;*/
+    /*-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);*/
+       /*-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);*/
+            /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);*/
+/*}*/
 
 .about {
     background: none repeat scroll 0 0 #4D4D4D;
@@ -435,4 +434,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', en
   color: #333333;
 }
 
+div#nav ul.nav li.active {
+  background-color: #000000;
+}
+
 @media (max-width: 768px) { .navbar-brand {margin-left:20px;} .navbar-toggle {margin-right:25px;} #Grid .mix{margin-left:-25px;}}
+
+/*test*/
+
+.position_fix{
+    position: fixed;
+    top:0;
+    z-index: 200;
+}
