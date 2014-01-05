@@ -22,7 +22,7 @@ angular.module('app').controller('DailybreadCtrl', [
     '$document',
     function($scope, $location, $route, $document) {
         angular.element($document[0].querySelectorAll('#preloader > span.txt')).html('データを読み込んでいます。');
-        var db=new OpenSpending.DailyBread($document[0].querySelectorAll('#dailybread'));
+        var db=new OpenSpending.DailyBread($document[0].querySelectorAll('#dailybread > div.container'));
         new OpenSpending.Aggregator({
             apiUrl: 'http://openspending.org/api',
             //localApiCache: 'aggregate.json',
